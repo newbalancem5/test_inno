@@ -5,12 +5,10 @@ void main() {
     try {
       print("Введите число");
       int number = int.parse(stdin.readLineSync()!);
-      final list = [number];
-      final result = list.join(',');
-      final scorelenght = result.length;
-      print("Длина массива: ${scorelenght}");
+      final result = [number].join(',').length;
+      print("Длина массива: ${result}");
       // print(list);
-    } on Exception catch (_) {
+    } catch (_) {
       print("Ошибка");
     } finally {
       final String text = stdin.readLineSync()!;
