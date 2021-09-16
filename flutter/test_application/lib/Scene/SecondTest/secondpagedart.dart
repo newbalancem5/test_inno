@@ -32,18 +32,21 @@ class SecondPage extends StatelessWidget {
                 );
               },
             ),
-            TextButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => const HomePage(),
-                    ),
-                  );
-                },
-                child: Text(
-                  home,
-                  style: FontStyleText.info,
-                ))
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: TextButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      CupertinoPageRoute(
+                        builder: (context) => const HomePage(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    home,
+                    style: FontStyleText.info,
+                  )),
+            )
           ],
         ),
       ),
