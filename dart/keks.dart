@@ -9,10 +9,10 @@ void main() {
       int number = int.parse(input);
       final result = [number].join(',').length;
       print("Длина массива: ${result}");
+      // print(list);
     } catch (_) {
       final String quit = 'exit';
       if (input == quit) {
-        print("Пока");
         return;
       } else {
         print("Дина массива: $list");

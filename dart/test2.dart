@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'dart:io';
 
 void main() {
@@ -8,7 +6,7 @@ void main() {
       print("Введите число");
       int number = int.parse(stdin.readLineSync()!);
       print("Ваше число $number");
-    } catch (Unhandled) {
+    } catch (_) {
       print("Это не число");
     }
   }
