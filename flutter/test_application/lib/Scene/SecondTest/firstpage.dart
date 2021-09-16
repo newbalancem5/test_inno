@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:test_application/Scene/SecondTest/secondpagedart.dart';
+import 'package:test_application/const/app_string.dart';
 import 'package:test_application/decoration/main_decoration.dart';
 
 class FirstPage extends StatelessWidget {
@@ -14,8 +15,8 @@ class FirstPage extends StatelessWidget {
       color: Colors.green,
       child: Center(
         child: TextButton(
-          child: const Text(
-            "На экран 1",
+          child: Text(
+            second_screen,
             style: FontStyleText.text,
           ),
           onPressed: () {

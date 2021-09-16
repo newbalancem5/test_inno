@@ -11,7 +11,7 @@ class AnimationTask extends StatefulWidget {
 }
 
 class _AnimationTaskState extends State<AnimationTask> {
-  bool selected = false;
+  bool selected = true;
   @override
   Widget build(BuildContext context) {
     return SizedBox(

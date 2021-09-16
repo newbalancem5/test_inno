@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_application/Scene/SecondTest/firstpage.dart';
 import 'package:test_application/Scene/task_animation.dart';
 import 'package:test_application/Scene/task_list.dart';
 import 'package:test_application/Scene/task_routing.dart';
+import 'package:test_application/const/app_string.dart';
+import 'package:test_application/decoration/main_decoration.dart';
 
 class CenterContainer extends StatefulWidget {
   const CenterContainer({Key? key}) : super(key: key);
@@ -21,8 +22,9 @@ class _CenterContainerState extends State<CenterContainer> {
         children: [
           SizedBox(
             child: ElevatedButton(
-              child: const Text(
-                'Первое Задание',
+              child: Text(
+                first_task,
+                style: FontStyleText.text,
               ),
               onPressed: () {
                 Navigator.push(
@@ -36,8 +38,9 @@ class _CenterContainerState extends State<CenterContainer> {
             padding: const EdgeInsets.only(top: 20),
             child: SizedBox(
               child: ElevatedButton(
-                child: const Text(
-                  'Второе Задание',
+                child: Text(
+                  second_task,
+                  style: FontStyleText.text,
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -53,8 +56,9 @@ class _CenterContainerState extends State<CenterContainer> {
             padding: const EdgeInsets.only(top: 20.0),
             child: SizedBox(
               child: ElevatedButton(
-                child: const Text(
-                  'Третье Задание',
+                child: Text(
+                  third_task,
+                  style: FontStyleText.text,
                 ),
                 onPressed: () {
                   Navigator.push(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_application/const/app_string.dart';
 import 'package:test_application/decoration/main_decoration.dart';
 import 'package:test_application/homepage.dart';
 
@@ -44,7 +45,10 @@ class _TaskListState extends State<TaskList> {
                   ),
                 );
               },
-              child: const Text("Назад"),
+              child: Text(
+                home,
+                style: FontStyleText.text,
+              ),
             ),
           ),
         ],
